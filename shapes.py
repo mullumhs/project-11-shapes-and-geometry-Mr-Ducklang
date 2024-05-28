@@ -14,7 +14,6 @@ class rectangle(Shape):
         self.width = int(width)
         self.height = int(height)
         
-        
     def perimeter(self):
         return 2*(self.width + self.height)
         
@@ -32,5 +31,9 @@ class triangle(Shape):
         return self.base + self.length + self.length2
         
     def area(self):
-        H = int(input("What is Triangles Height?"))
+        H = int(input("What is Triangles Height? "))
         return 0.5*(self.base*H)
+    
+    def height(self):
+        A = int(input("What is Triangles Area? "))
+        return 2*(A/self.base)
